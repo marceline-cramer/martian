@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (c) 2022 Marceline Cramer
+
+name = "martian"
+description = "A retro-ish Zola theme from the Red Planet."
+license = "AGPL-3.0"
+homepage = "https://marceline-cramer.github.io/martian/"
+min_version = "0.15.0"
+
+[extra]
+
+[author]
+name = "Marceline Cramer"
+homepage = "https://github.com/marceline-cramer"
