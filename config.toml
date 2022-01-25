@@ -17,8 +17,8 @@ buttons = [
 [extra.site_directory]
 title = "site directory"
 links = [
-    {url="https://github.com/marceline-cramer/martian", text="github", external=true}
-    {url="about", text="about"}, 
+    {url="https://github.com/marceline-cramer/martian", text="github", external=true},
+    {url="about", text="about"},
 ]
 
 [extra.bonus_directory]
