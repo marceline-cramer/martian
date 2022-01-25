@@ -1,0 +1,29 @@
+base_url = "https://marceline-cramer.github.io/martian/"
+title = "martian"
+description = "A retro-ish Zola theme from the Red Planet."
+default_language = "en"
+compile_sass = true
+
+[extra]
+buttons = [
+    {img="/assets/agplv3-88x31.png", url="/agpl-3.0.txt", local=true},
+    {img="/assets/neovim.gif", url="https://neovim.io"},
+    {img="/assets/internet-roadkill.gif"},
+    {img="/assets/lilrib.gif"},
+    {img="/assets/miku.gif"}, 
+    {img="/assets/nocookie.gif"},
+]
+
+[extra.site_directory]
+title = "site directory"
+links = [
+    {url="about", text="about"},
+]
+
+[extra.bonus_directory]
+title = "other helpful resources"
+links = [
+    {url="https://getzola.org", text="go get Zola!", external=true},
+    {url="https://anlucas.neocities.org/88x31Buttons.html", text="a bunch of other buttons", external=true},
+    {url="https://sadgrl.online", text="a pretty website", external=true},
+]
