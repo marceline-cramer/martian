@@ -4,6 +4,7 @@
 {% import "macros/directory.html" as directory %}
 {% import "macros/posts.html" as posts %}
 {% import "macros/taxonomies.html" as taxonomies %}
+{% import "macros/webmention.html" as webmention %}
 
 <!DOCTYPE html>
 <html lang="{{ lang }}">
@@ -19,6 +20,9 @@
     {% endif -%}
 
     <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+
+    {%- block tags -%}
+    {%- endblock tags -%}
   </head>
   <body>
     <div class="sidebar-left">
@@ -83,6 +87,8 @@
       {%- block main -%}
         <h1>posts</h1>
         {{ posts::list_pages(list=paginator.pages) }}
+        <h1>Webmentions</h1>
+        {{ webmention::show() }}
       {%- endblock main -%}
     </div>
   </body>

@@ -7,6 +7,10 @@
   <title>{{ page.title }}</title>
 {%- endblock title -%}
 
+{%- block tags %}
+  {{ webmention::tag(endpoint=page.permalink) }}
+{%- endblock tags -%}
+
 {%- block sidebar_left -%}
   <h1 class="post-title">
     <a href="{{ page.permalink }}">{{ page.title }}</a>
@@ -50,4 +54,6 @@
   <article class="post">
     {{ page.content | safe }}
   </article>
+
+  {{ webmention::show() }}
 {%- endblock main -%}
