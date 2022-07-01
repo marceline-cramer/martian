@@ -83,6 +83,10 @@
 
     <div class="page-contents">
       {%- block main -%}
+        <article class="post">
+          {{ section.content | safe }}
+        </article>
+
         <h1>Posts</h1>
         {{ posts::list_pages(list=paginator.pages) }}
         <h1>Webmentions</h1>
