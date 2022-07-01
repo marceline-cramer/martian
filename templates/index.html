@@ -31,6 +31,10 @@
       {%- endblock page_info -%}
 
       {%- block site_info -%}
+        {% if config.extra.site_logo %}
+          <img src="{{ config.extra.site_logo }}" width="100%" style="border:none;"/>
+        {% endif %}
+
         <h1 class="post-title">
           <a href="{{ config.base_url }}">{{ config.title }}</a>
         </h1>
