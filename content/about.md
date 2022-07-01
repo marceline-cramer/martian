@@ -1,8 +1,8 @@
 +++
-title = "about martian"
+title = "About Martian"
 +++
 
-martian is a retro-ish Zola theme from the Red Planet.
+Martian is a retro-ish Zola theme from the Red Planet.
 
 # "Retro-ish"
 
