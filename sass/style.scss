@@ -134,28 +134,35 @@ a:active {
 }
 
 .container {
-  max-width: 864px;
   padding: 20px 40px;
   margin: 0 auto;
 }
 
-.sidebar-left, .sidebar-right {
-  // flex-direction: column;
-  // flex-wrap: wrap;
-  width: 300px;
-  padding: 10px;
-  position: sticky;
-  top: 20px;
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 50%;
+  }
+
+  .sidebar-left, .sidebar-right {
+    padding: 10px;
+    position: sticky;
+    top: 20px;
+    margin: 2%;
+  }
+
+  .sidebar-left {
+    float: left;
+    width: 400px;
+  }
+
+  .sidebar-right {
+    float: right;
+    width: 20%;
+    flex-direction: column;
+  }
 }
 
-.sidebar-left {
-  float: left;
-}
-
-.sidebar-right {
-  float: right;
-  flex-direction: column;
-
+.side-bar right {
   img {
     // height: 50px;
     margin: 5px auto;
