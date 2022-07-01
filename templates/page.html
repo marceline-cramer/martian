@@ -11,7 +11,7 @@
   {{ webmention::tag(endpoint=page.permalink) }}
 {%- endblock tags -%}
 
-{%- block sidebar_left -%}
+{%- block page_info -%}
   <h1 class="post-title">
     <a href="{{ page.permalink }}">{{ page.title }}</a>
   </h1>
@@ -48,7 +48,7 @@
       </li>
     {% endfor %}
   </ol>
-{%- endblock sidebar_left -%}
+{%- endblock page_info -%}
 
 {%- block main -%}
   <article class="post">

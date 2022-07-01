@@ -25,13 +25,13 @@
     {%- endblock tags -%}
   </head>
   <body>
-    <div class="sidebar-left">
-      {%- block sidebar_left -%}
-      {%- endblock sidebar_left -%}
+    <div class="page-info">
+      {%- block page_info -%}
+      {%- endblock page_info -%}
     </div>
 
-    <div class="sidebar-right">
-      {%- block sidebar_right -%}
+    <div class="site-info">
+      {%- block site_info -%}
         <h1 class="post-title">
           <a href="{{ config.base_url }}">{{ config.title }}</a>
         </h1>
@@ -70,7 +70,7 @@
             {% endfor %}
           </div>
         {% endif %}
-      {%- endblock sidebar_right -%}
+      {%- endblock site_info -%}
 
       <div class="footer">
         {% block footer -%}
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="page-contents">
       {%- block main -%}
         <h1>posts</h1>
         {{ posts::list_pages(list=paginator.pages) }}

@@ -126,36 +126,36 @@ a:active {
   text-align: center;
 }
 
-.container, .sidebar-left, .sidebar-right {
+.page-contents, .page-info, .site-info {
   background: var(--background);
   border: 3px solid var(--border-color);
   display: flex;
   flex-direction: column;
 }
 
-.container {
+.page-contents {
   padding: 20px 40px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .page-contents {
     max-width: 50%;
   }
 
-  .sidebar-left, .sidebar-right {
+  .page-info, .site-info {
     padding: 10px;
     position: sticky;
     top: 20px;
     margin: 2%;
   }
 
-  .sidebar-left {
+  .page-info {
     float: left;
     width: 400px;
   }
 
-  .sidebar-right {
+  .site-info {
     float: right;
     width: 20%;
     flex-direction: column;
