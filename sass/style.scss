@@ -136,7 +136,7 @@ a:active {
 }
 
 .page-contents {
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 .sidebar {
@@ -157,6 +157,7 @@ a:active {
   .page-contents {
     border: 3px solid var(--border-color);
     margin: 10px 10px 10px 333px;
+    padding: 20px;
   }
 
   .sidebar {
