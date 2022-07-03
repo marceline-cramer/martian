@@ -134,6 +134,13 @@ a:active {
   }
 }
 
+.site-logo {
+  width: 50%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .post-title {
   margin: 0;
   margin-bottom: 20px;
@@ -153,6 +160,12 @@ a:active {
   display: inline;
   margin-top: 20px;
   text-align: center;
+
+  img {
+    // height: 50px;
+    margin: 5px auto;
+    border: 1px solid var(--accent);
+  }
 }
 
 .footer {
@@ -172,14 +185,6 @@ a:active {
 
 .page-contents {
   padding: 10px;
-}
-
-.sidebar {
-  img {
-    // height: 50px;
-    margin: 5px auto;
-    border: 1px solid var(--accent);
-  }
 }
 
 @media screen and (min-width: 1024px) {
